@@ -1,0 +1,21 @@
+:root
+{
+    --color-gray: #AAB0BE;
+    --color-blue: #3A4AF2;
+    --color-dark: #121212;
+    --color-white: #ffffff;
+}
+[data-theme="dark"]
+{
+    --app-color-primary: var(--color-blue);
+    --app-color-secondary: var(--color-gray);
+    --app-color-text: var(--color-white);
+    --app-color-body: var(--color-dark);
+}
+[data-theme="light"]
+{
+    --app-color-primary: var(--color-blue);
+    --app-color-secondary: var(--color-gray);
+    --app-color-text: var(--color-dark);
+    --app-color-body: var(--color-white);
+}

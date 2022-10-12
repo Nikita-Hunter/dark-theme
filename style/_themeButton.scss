@@ -1,0 +1,43 @@
+.theme-block
+{
+    display: flex;
+    align-items: center;
+    &__switch
+    {
+
+    }
+    &__checkbox
+    {
+        display: none;
+        &:checked + .theme-block__slider
+        {
+            background-color: red;
+        }
+        &:checked + .theme-block__slider::before
+        {
+            left: calc(100% - 25px);
+        }
+    }
+    &__slider
+    {
+        background-color: #ccc;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+        width: 60px;
+        height: 30px;
+        position: relative;
+        &::before
+        {
+            content: '';
+            background-color: #fff;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            top: 5px;
+            left: 5px;
+            transition: all .4s ease-in-out;
+        }
+    }
+}
